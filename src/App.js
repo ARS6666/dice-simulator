@@ -11,12 +11,12 @@ function App() {
     }
 
     function randomDice() {
-      const random = Math.floor(Math.random() * 6) + 1; // Random number between 1 and 6
+      const random = Math.floor(Math.random() * 6) + 1;
       rollDice(random);
     }
 
     function rollDice(random) {
-      dice.style.animation = "rolling 2s"; // Adjusted the animation duration
+      dice.style.animation = "rolling 3s";
       setTimeout(() => {
         dice.style.animation = "none";
         switch (random) {
@@ -41,7 +41,7 @@ function App() {
           default:
             break;
         }
-      }, 2000); // Adjusted to match the animation duration
+      }, 3050);
     }
   }, []);
 
