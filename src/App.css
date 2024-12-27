@@ -22,6 +22,17 @@ body {
   border-radius: 30px;
   background: #eeeeee;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.8);
+  animation: scaler 1s ease;
+
+}
+@keyframes scaler {
+  0% {
+    transform: scale(1.5);
+  };
+  100% {
+    transform: scale(1.8);
+  }
 }
 
 .face {
@@ -114,7 +125,7 @@ body {
 .roll {
   cursor: pointer;
   color: #b33951;
-  margin-top: 60px;
+  margin-top: 10px;
   border: 2px solid #b33951;
   border-radius: 3px;
   font: 700 16px "Montserrat";
